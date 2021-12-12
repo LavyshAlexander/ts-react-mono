@@ -1,0 +1,1 @@
+export { hasName } from './hasName'

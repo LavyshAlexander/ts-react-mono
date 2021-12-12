@@ -1,0 +1,37 @@
+{
+	"name": "@project/app",
+	"version": "0.0.1",
+	"description": "Project application.",
+	"keywords": [
+		"app"
+	],
+	"author": "Lavysh Alexander <LavyshAlexander@gmail.com>",
+	"homepage": "https://github.com/LavyshAlexander/ts-mono#readme",
+	"license": "ISC",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"directories": {
+		"lib": "lib",
+		"test": "tests"
+	},
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LavyshAlexander/ts-mono.git"
+	},
+	"scripts": {
+		"test": "yarn build && mocha -r ts-node/register tests/*.test.ts",
+		"build": "tsc"
+	},
+	"bugs": {
+		"url": "https://github.com/LavyshAlexander/ts-mono/issues"
+	},
+	"dependencies": {
+		"@project/utils": "^0.0.1"
+	}
+}

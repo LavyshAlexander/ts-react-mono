@@ -1,0 +1,1 @@
+export { hasOwn } from './hasOwn'
