@@ -27,13 +27,17 @@
 	"scripts": {
 		"start": "webpack serve --config webpack.config.js --env env=development",
 		"build": "webpack --config webpack.config.js --env env=production",
-		"test": "yarn build && mocha -r ts-node/register tests/*.test.ts"
+		"test": "mocha -r ts-node/register -r jsdom-global/register -r tests/unitTestSetup.ts tests/**/*.test.ts tests/**/*.test.tsx --recursive --timeout 5000"
 	},
 	"bugs": {
 		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"
 	},
 	"dependencies": {
 		"@project/utils": "^0.0.1",
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.6",
+		"jsdom": "^19.0.0",
+		"jsdom-global": "^3.0.2",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-redux": "^7.2.6",
@@ -49,6 +53,9 @@
 		"@babel/preset-react": "^7.16.0",
 		"@babel/preset-typescript": "^7.16.0",
 		"@babel/runtime": "^7.16.3",
+		"@types/enzyme": "^3.10.10",
+		"@types/enzyme-adapter-react-16": "^1.0.6",
+		"@types/jsdom": "^16.2.13",
 		"@types/react": "^17.0.37",
 		"@types/react-dom": "^17.0.11",
 		"babel-loader": "^8.2.3",
