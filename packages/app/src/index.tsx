@@ -6,3 +6,4 @@ ReactDOM.render(
 	<div>Here goes the sun.</div>,
 	document.getElementById('root')
 )
+
