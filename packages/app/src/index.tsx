@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { App } from './components'
 
 
 ReactDOM.render(
-	<div>Here goes the sun.</div>,
+	<App />,
 	document.getElementById('root')
 )
