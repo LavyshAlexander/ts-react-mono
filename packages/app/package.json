@@ -6,7 +6,7 @@
 		"app"
 	],
 	"author": "Lavysh Alexander <LavyshAlexander@gmail.com>",
-	"homepage": "https://github.com/LavyshAlexander/ts-mono#readme",
+	"homepage": "https://github.com/LavyshAlexander/ts-react-mono#readme",
 	"license": "ISC",
 	"main": "lib/index.js",
 	"typings": "lib/index.d.ts",
@@ -22,7 +22,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/LavyshAlexander/ts-mono.git"
+		"url": "git+https://github.com/LavyshAlexander/ts-react-mono.git"
 	},
 	"scripts": {
 		"start": "webpack serve --config webpack.config.js --env env=development",
@@ -30,7 +30,7 @@
 		"test": "yarn build && mocha -r ts-node/register tests/*.test.ts"
 	},
 	"bugs": {
-		"url": "https://github.com/LavyshAlexander/ts-mono/issues"
+		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"
 	},
 	"dependencies": {
 		"@project/utils": "^0.0.1",
