@@ -1,15 +1,15 @@
-import { mount } from 'enzyme'
+import { render, screen } from '@testing-library/react'
 import { expect } from 'chai'
 import { App } from '../../src/components/App'
 
 
 describe('<App />', () => {
 	it('should have h1 element with correct inner text', () => {
-		const component = mount(<App />)
+		render(<App />)
 
-		const actual = component.find('h1').text()
-		const expected = 'Here goes the sun.'
+		const actual = screen.getByDisplayValue('Here goes the sun.').tagName
+		const expected = 'h1'
 
-		expect(actual).to.be.equal(expected)
+		expect(actual).to.be(expected)
 	})
 })
