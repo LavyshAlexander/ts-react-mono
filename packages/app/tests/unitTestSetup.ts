@@ -1,3 +1,3 @@
 import 'regenerator-runtime'
-import '@testing-library/jets-dom'
+import '@testing-library/jest-dom'
 import './matchMedia.mock'
