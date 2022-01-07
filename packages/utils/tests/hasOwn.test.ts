@@ -1,5 +1,4 @@
 import { hasOwn } from '..'
-import { expect } from 'chai'
 
 
 describe('hasOwn()', () => {
@@ -10,7 +9,7 @@ describe('hasOwn()', () => {
 
 		const actual = hasOwn(object, searchPropName)
 
-		expect(actual).to.be.true
+		expect(actual).toBeTruthy()
 	})
 
 	it('should return false if object does not have searched property', () => {
@@ -19,7 +18,7 @@ describe('hasOwn()', () => {
 
 		const actual = hasOwn(object, searchPropName)
 
-		expect(actual).to.be.false
+		expect(actual).toBeFalsy()
 	})
 
 
@@ -30,7 +29,7 @@ describe('hasOwn()', () => {
 
 		const actual = hasOwn(object, searchPropName)
 
-		expect(actual).to.be.false
-		expect(object.prop).to.be.equal(2)
+		expect(actual).toBeFalsy()
+		expect(object.prop).toEqual(2)
 	})
 })
