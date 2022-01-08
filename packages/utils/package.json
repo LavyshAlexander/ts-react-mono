@@ -25,8 +25,9 @@
 		"url": "git+https://github.com/LavyshAlexander/ts-react-mono.git"
 	},
 	"scripts": {
-		"test": "yarn build && jest -- tests/*.test.ts",
-		"build": "tsc"
+		"test": "yarn build && jest",
+		"build": "yarn clean && tsc",
+		"clean": "rimraf ./lib"
 	},
 	"bugs": {
 		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"
