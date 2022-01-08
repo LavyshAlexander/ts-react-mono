@@ -6,7 +6,8 @@
 	],
 	"scripts": {
 		"build": "lerna run build",
-		"test": "lerna run test"
+		"test": "lerna run test",
+		"coverage": "yarn workspace @project/utils coverage && yarn workspace @project/app coverage"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.3.0",

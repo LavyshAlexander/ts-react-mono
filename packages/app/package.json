@@ -25,9 +25,11 @@
 		"url": "git+https://github.com/LavyshAlexander/ts-react-mono.git"
 	},
 	"scripts": {
+		"clean": "rimraf ./dist",
 		"start": "webpack serve --config webpack.config.js --env env=development",
-		"build": "webpack --config webpack.config.js --env env=production",
-		"test": "jest"
+		"build": "yarn clean && webpack --config webpack.config.js --env env=production",
+		"test": "jest",
+		"coverage": "jest --coverage"
 	},
 	"bugs": {
 		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"

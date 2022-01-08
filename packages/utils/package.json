@@ -25,9 +25,10 @@
 		"url": "git+https://github.com/LavyshAlexander/ts-react-mono.git"
 	},
 	"scripts": {
-		"test": "yarn build && jest",
+		"test": "yarn build && jest --notify",
 		"build": "yarn clean && tsc",
-		"clean": "rimraf ./lib"
+		"clean": "rimraf ./lib",
+		"coverage": "jest --coverage"
 	},
 	"bugs": {
 		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"
@@ -37,9 +38,13 @@
 		"@babel/preset-env": "^7.16.7",
 		"@babel/preset-typescript": "^7.16.7",
 		"@types/jest": "^27.4.0",
-		"babel-jest": "^27.4.6"
+		"babel-jest": "^27.4.6",
+		"node-notifier": "^10.0.0"
 	},
 	"dependencies": {
 		"ts-node": "^10.4.0"
+	},
+	"jest": {
+		"testEnvironment": "jsdom"
 	}
 }
