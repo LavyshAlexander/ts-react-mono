@@ -31,7 +31,13 @@
 	"bugs": {
 		"url": "https://github.com/LavyshAlexander/ts-react-mono/issues"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.16.7",
+		"@babel/preset-env": "^7.16.7",
+		"@babel/preset-typescript": "^7.16.7",
+		"@types/jest": "^27.4.0",
+		"babel-jest": "^27.4.6"
+	},
 	"dependencies": {
 		"ts-node": "^10.4.0"
 	}
